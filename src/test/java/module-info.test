@@ -1,0 +1,87 @@
+--add-opens
+  java.base/java.util=ALL-UNNAMED 
+  
+--add-opens
+  java.base/java.lang=ALL-UNNAMED
+
+--add-modules
+  jdk.unsupported,org.assertj.core,org.junit.jupiter.params,org.mockito,net.bytebuddy,spring.core,thymeleaf,thymeleaf.spring6,spring.webmvc,org.apache.tomcat.embed.core
+
+
+--add-reads
+  com.example=spring.boot
+--add-reads
+  com.example=spring.boot.autoconfigure
+--add-reads
+  com.example=org.mockito
+--add-reads
+  com.example=spring.beans
+--add-reads
+  com.example=spring.core
+--add-reads
+  com.example=spring.context
+--add-reads
+  com.example=org.assertj.core
+--add-reads
+  com.example=org.junit.jupiter.api
+--add-reads
+  com.example=org.junit.jupiter.engine
+--add-reads
+  com.example=net.bytebuddy
+--add-reads
+  com.example=thymeleaf
+--add-reads
+  com.example=thymeleaf.spring6
+--add-reads
+  com.example=spring.webmvc
+--add-reads
+  com.example=org.apache.tomcat.embed.core
+--add-reads
+  com.example=lombok
+--add-reads
+  com.example=spring.web
+
+--add-opens
+  com.example/com.test.controller=org.junit.platform.commons
+--add-opens
+  com.example/com.test.demo=org.junit.platform.commons
+--add-opens
+  com.example/com.test.controller=thymeleaf
+--add-opens
+  com.example/com.test.demo=thymeleaf
+--add-opens
+  com.example/com.test.controller=thymeleaf.spring6
+--add-opens
+  com.example/com.test.demo=thymeleaf.spring6
+--add-opens
+  com.example/com.test.controller=spring.webmvc
+--add-opens
+  com.example/com.test.demo=spring.webmvc
+--add-opens
+  com.example/com.test.controller=org.apache.tomcat.embed.core
+--add-opens
+  com.example/com.test.demo=org.apache.tomcat.embed.core
+--add-opens
+  com.example/com.test.controller=spring.web
+--add-opens
+  com.example/com.test.demo=spring.web
+--add-opens
+  com.example/com.test.controller=spring.beans
+--add-opens
+  com.example/com.test.demo=spring.beans
+--add-opens
+  com.example/com.test.controller=spring.core
+--add-opens
+  com.example/com.test.demo=spring.core
+--add-opens
+  com.example/com.test.controller=spring.context
+--add-opens
+  com.example/com.test.demo=spring.context
+--add-opens
+  com.example/com.test.controller=spring.boot
+--add-opens
+  com.example/com.test.demo=spring.boot
+--add-opens
+  com.example/com.test.controller=spring.boot.autoconfigure
+--add-opens
+  com.example/com.test.demo=spring.boot.autoconfigure
